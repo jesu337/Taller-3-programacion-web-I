@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+
+.header {
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header .nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.header .nav .btn-header {
+  background: #6b1439;  
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.hero {
+  height: 90vh;
+  background: url("../recursos/grande.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #6b1439;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.places {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.places h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.places .subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.btn-card {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #6b1439;
+  color: #6b1439;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+  background: #6b1439;
+  color: #fff;
+}
